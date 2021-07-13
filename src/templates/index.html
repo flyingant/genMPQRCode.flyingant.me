@@ -7,14 +7,18 @@
 </head>
 <body>
   <div class="w-full h-screen flex flex-col items-center justify-start">
-    <div class="container font-sans mb-4 px-4 flex items-center justify-between">
-      <h2 class="text-2xl text-gre">
-        Hello MaYi!
+    <div class="container font-sans mb-4 px-4 flex items-center justify-between md:flex-row flex-col ">
+      <h2 class="text-2xl text-grey mt-4 md:m-0">
+        QRCode Generator - Wechat Mini Program
       </h2>
-      <div class="h-32"></div>
+      <div class="h-32">
+        <ul class="w-full h-full text-xs text-gray-500 flex flex-col items-start justify-center p-4 list-disc">
+          <li>Generate the QRCode for Wechat Mini Program</li>
+        </ul>
+      </div>
     </div>
     <hr class="container mb-4" />
-    <div id="root"></div>
+    <div class="container" id="root"></div>
   </div>
 </body>
 </html>

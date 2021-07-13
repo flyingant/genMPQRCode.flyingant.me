@@ -83,7 +83,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'React Page Boilerplate',
+      title: `MaYi's Wechat MP QRCode Generator`,
       template: 'src/templates/index.html',
     }),
     new CopyWebpackPlugin({

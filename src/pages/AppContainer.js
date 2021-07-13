@@ -1,4 +1,9 @@
+/* eslint-disable react/no-unused-state */
+/* eslint-disable react/style-prop-object */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
+import AccessTokenGeneratorForm from '../components/AccessTokenGeneratorForm';
+import MPQRCodeGeneratorForm from '../components/MPQRCodeGeneratorForm';
 
 class AppContainer extends React.Component {
   constructor(props) {
@@ -8,8 +13,13 @@ class AppContainer extends React.Component {
 
   render() {
     return (
-      <div className="container max-auto flex flex-col">
-        <h1 className="text-center">React App</h1>
+      <div className="w-full flex flex-col">
+        <details className="w-full mb-4 cursor-pointer p-4">
+          <summary>Wechat Mini Program - Access Token Generator</summary>
+          <AccessTokenGeneratorForm />
+          <hr className="container mb-4" />
+        </details>
+        <MPQRCodeGeneratorForm />
       </div>
     );
   }

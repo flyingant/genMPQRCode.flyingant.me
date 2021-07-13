@@ -81,7 +81,7 @@ module.exports = {
       filename: 'style.css',
     }),
     new HtmlWebpackPlugin({
-      title: 'HTML Boilerplate',
+      title: `MaYi's Wechat MP QRCode Generator`,
       template: 'src/templates/index.html',
     }),
     new CopyWebpackPlugin({
